@@ -29,6 +29,17 @@ button {
   border: none;
 }
 
+input {
+  border: none;
+  background-color: transparent;
+  text-align: right;
+  font-family: 'Space Mono', monospace;
+  width: 90%;
+  outline: none;
+  color: #00494d;
+  font-size: 1em;
+}
+
 img {
   max-width: 100%;
 }
@@ -111,6 +122,29 @@ ul, ol {
 .custom-btn {
   background-color: #f4fafa;
   color: #5e7a7d;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.custom-btn:focus {
+  color: #00494d;
+}
+
+.custom-btn:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.custom-btn:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.custom-btn:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.custom-btn:focus::placeholder {
+  color: transparent;
 }
 
 .final-total-card {

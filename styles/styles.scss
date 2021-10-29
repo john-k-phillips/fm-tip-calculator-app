@@ -31,6 +31,17 @@ button {
     border: none;
 }
 
+input {
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    width: 90%;
+    outline: none;
+    color: $clr-dark-cyan;
+    font-size: 1em;
+}
+
 img {
     max-width: 100%;
 }
@@ -120,6 +131,16 @@ ul, ol {
 .custom-btn {
     background-color: $clr-lighter-grayish-cyan;
     color: $clr-darker-cyan;
+
+    text-align: center;
+    outline: none;
+    border: none;
+    &:focus {
+        color: $clr-dark-cyan;
+    }
+    &:focus::placeholder {
+        color: transparent;
+    }
 }
 
 // Final Total Card
