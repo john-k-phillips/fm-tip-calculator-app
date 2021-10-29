@@ -14,44 +14,46 @@
 <body>
   <img class="logo" src="images/logo.svg" alt="splitter">
   <div class="tip-card">
-    <div class="bill-total">
-      <h3>Bill</h3>
-      <div class="subtotal">
-        <img class="total-icon" src="images/icon-dollar.svg" alt="$">
-        <span class="total">142.55</span>
+    <div class="wrapper">
+      <div class="bill-total">
+        <h3>Bill</h3>
+        <div class="subtotal">
+          <img class="total-icon" src="images/icon-dollar.svg" alt="$">
+          <span class="total">142.55</span>
+        </div>
+      </div>
+
+      <h3 class="select-tip">Select Tip %</h3>
+        <div class="tip-btns">
+          <button class="tip-btn">
+            5%
+          </button>
+          <button class="tip-btn">
+            10%
+          </button>
+          <button class="tip-btn recommended">
+            15%
+          </button>
+          <button class="tip-btn">
+            25%
+          </button>
+          <button class="tip-btn">
+            50%
+          </button>
+          <button class="tip-btn custom-btn">
+            Custom
+          </button>
+        </div>
+
+      <h3 class="num-of-people">Number of People</h3>
+      <div class="people-container">
+        <div class="people-total">
+          <img class="total-icon" src="images/icon-person.svg" alt="" aria-hidden="true">
+          <span class="total">5</span>
+        </div>
       </div>
     </div>
-
-    <h3 class="select-tip">Select Tip %</h3>
-      <div class="tip-btns">
-        <button class="tip-btn">
-          5%
-        </button>
-        <button class="tip-btn">
-          10%
-        </button>
-        <button class="tip-btn recommended">
-          15%
-        </button>
-        <button class="tip-btn">
-          25%
-        </button>
-        <button class="tip-btn">
-          50%
-        </button>
-        <button class="tip-btn custom-btn">
-          Custom
-        </button>
-      </div>
-
-    <h3 class="num-of-people">Number of People</h3>
-    <div class="people-container">
-      <div class="people-total">
-        <img class="total-icon" src="images/icon-person.svg" alt="" aria-hidden="true">
-        <span class="total">5</span>
-      </div>
-    </div>
-
+    
     <div class="final-total-card">
       <div class="per-person">
         <span class="tip-amount person-after">Tip Amount</span>
@@ -63,7 +65,7 @@
       </div>
       <button class="reset-btn">Reset</button>
     </div>
-
+    
   </div>
 </body>
 </html>

@@ -169,4 +169,46 @@ ul, ol {
   color: #7f9c9f;
   font-weight: bold;
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo {
+    margin-top: 0em;
+  }
+  .tip-card {
+    max-width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 0.8em;
+    gap: 2em;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .final-total-card {
+    width: 100%;
+    margin: 0em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2em;
+    padding-top: 3em;
+  }
+  .final-total-card .per-person .final-price, .final-total-card .total-persons .final-price {
+    font-size: 3em;
+  }
+  .final-total-card .reset-btn {
+    margin-top: auto;
+  }
+  .tip-btns .tip-btn {
+    width: 30%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
