@@ -98,6 +98,10 @@ ul, ol {
   margin-right: auto;
 }
 
+.subtotal:hover, .subtotal:focus, .people-total:hover, .people-total:focus {
+  outline: 2px solid #26c0ab;
+}
+
 .total {
   color: #00494d;
   font-weight: bold;
@@ -246,6 +250,26 @@ ul, ol {
   font-size: 0.8em;
   color: #7f9c9f;
   font-weight: bold;
+}
+
+.error-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.error-container h3 {
+  margin-right: auto;
+}
+
+.error-container .js-error-handle {
+  display: none;
+  font-size: 0.5em;
+  font-weight: bold;
+  color: tomato;
+  justify-self: flex-end;
+  margin-bottom: 0.5em;
+  margin-top: 2.5em;
 }
 
 @media screen and (min-width: 1024px) {

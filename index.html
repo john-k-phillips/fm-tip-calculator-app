@@ -19,7 +19,7 @@
         <h3>Bill</h3>
         <div class="subtotal">
           <img class="total-icon" src="images/icon-dollar.svg" alt="$">
-          <input class="total" type="number" placeholder="142.55">
+          <input class="total" type="number" placeholder="0" value="142.55">
         </div>
       </div>
 
@@ -43,11 +43,14 @@
           <input class="tip-btn custom-btn" type="number" placeholder="Custom">
         </div>
 
-      <h3 class="num-of-people">Number of People</h3>
+        <div class="error-container">
+          <h3 class="num-of-people">Number of People</h3>
+          <p class="js-error-handle">Number can't be zero</p>
+        </div>
       <div class="people-container">
         <div class="people-total">
           <img class="total-icon" src="images/icon-person.svg" alt="" aria-hidden="true">
-          <input class="total" placeholder="5" type="number" />
+          <input class="total" placeholder="0" type="number" value="5" />
         </div>
       </div>
     </div>
