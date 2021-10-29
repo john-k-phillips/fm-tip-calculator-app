@@ -9,10 +9,24 @@
 body {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 button {
   font-family: 'Space Mono', monospace;
+  outline: none;
+  border: none;
 }
 
 img {
@@ -21,5 +35,138 @@ img {
 
 ul, ol {
   list-style: none;
+}
+
+.logo {
+  width: 100px;
+  margin: 2em auto;
+}
+
+.tip-card {
+  width: 100%;
+  background-color: white;
+  padding: 1.4em;
+  border-top-left-radius: 0.75em;
+  border-top-right-radius: 0.75em;
+  text-align: left;
+}
+
+.tip-card h3 {
+  font-size: 0.7em;
+  color: #5e7a7d;
+  margin-bottom: 0.5em;
+}
+
+.total-icon {
+  margin-right: auto;
+}
+
+.total {
+  color: #00494d;
+  font-weight: bold;
+}
+
+.select-tip, .num-of-people {
+  margin-top: 1.5em;
+}
+
+.subtotal, .people-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #f4fafa;
+  border-radius: 0.3em;
+  padding: 0.2em 0.5em;
+}
+
+.tip-btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.tip-btn {
+  width: 47%;
+  padding: 0.5em 0.25em;
+  background-color: #00494d;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+}
+
+.recommended {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.custom-btn {
+  background-color: #f4fafa;
+  color: #5e7a7d;
+}
+
+.final-total-card {
+  margin-top: 2em;
+  background-color: #00494d;
+  color: white;
+  padding: 2em 1.5em;
+  font-size: 0.6em;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.final-total-card .per-person, .final-total-card .total-persons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.final-total-card .per-person .tip-amount, .final-total-card .total-persons .tip-amount {
+  margin-right: auto;
+}
+
+.final-total-card .per-person .final-price, .final-total-card .total-persons .final-price {
+  font-size: 2em;
+  color: #26c0ab;
+  font-weight: bold;
+}
+
+.final-total-card .reset-btn {
+  background-color: #26c0ab;
+  color: #00494d;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  margin-top: 1em;
+}
+
+.person-after::after {
+  content: '/ person';
+  display: block;
+  font-size: 0.8em;
+  color: #7f9c9f;
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */
