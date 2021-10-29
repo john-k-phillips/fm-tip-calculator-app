@@ -27,6 +27,11 @@ button {
   font-family: 'Space Mono', monospace;
   outline: none;
   border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: #26c0ab;
 }
 
 input {
@@ -38,6 +43,27 @@ input {
   outline: none;
   color: #00494d;
   font-size: 1em;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  display: none;
 }
 
 img {
@@ -114,9 +140,18 @@ ul, ol {
   color: white;
 }
 
+.tip-btn:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
 .recommended {
   background-color: #26c0ab;
   color: #00494d;
+}
+
+.recommended:focus, .recommended:hover {
+  background-color: #6ae2d2;
 }
 
 .custom-btn {
@@ -125,6 +160,11 @@ ul, ol {
   text-align: center;
   outline: none;
   border: none;
+}
+
+.custom-btn:hover {
+  background-color: #f4fafa;
+  outline: 2px solid #26c0ab;
 }
 
 .custom-btn:focus {
@@ -194,6 +234,10 @@ ul, ol {
   padding: 0.5em;
   border-radius: 0.3em;
   margin-top: 1em;
+}
+
+.final-total-card .reset-btn:focus, .final-total-card .reset-btn:hover {
+  background-color: #6ae2d2;
 }
 
 .person-after::after {
