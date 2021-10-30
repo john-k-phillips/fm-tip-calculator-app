@@ -19,7 +19,7 @@
         <h3>Bill</h3>
         <div class="subtotal">
           <img class="total-icon" src="images/icon-dollar.svg" alt="$">
-          <input class="total" type="number" placeholder="0" value="142.55">
+          <input class="total" type="number" placeholder="0" value="142.55" oninput="billHandler()">
         </div>
       </div>
 
@@ -50,7 +50,7 @@
       <div class="people-container">
         <div class="people-total">
           <img class="total-icon" src="images/icon-person.svg" alt="" aria-hidden="true">
-          <input class="total" placeholder="0" type="number" value="5" />
+          <input class="total" placeholder="0" type="number" value="5" oninput="peopleTotalHandler()" />
         </div>
       </div>
     </div>
