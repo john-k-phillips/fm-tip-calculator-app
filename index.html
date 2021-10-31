@@ -19,28 +19,28 @@
         <h3>Bill</h3>
         <div class="subtotal">
           <img class="total-icon" src="images/icon-dollar.svg" alt="$">
-          <input class="total" type="number" placeholder="0" value="142.55" oninput="billHandler()">
+          <input id="bill-input" class="total" type="number" placeholder="0" value="142.55" oninput="billHandler()">
         </div>
       </div>
 
       <h3 class="select-tip">Select Tip %</h3>
         <div class="tip-btns">
-          <button class="tip-btn">
+          <button class="tip-btn" onclick="percentChangeHandle(5)">
             5%
           </button>
-          <button class="tip-btn">
+          <button class="tip-btn" onclick="percentChangeHandle(10)">
             10%
           </button>
-          <button class="tip-btn recommended">
+          <button class="tip-btn recommended" onclick="percentChangeHandle(15)">
             15%
           </button>
-          <button class="tip-btn">
+          <button class="tip-btn" onclick="percentChangeHandle(25)">
             25%
           </button>
-          <button class="tip-btn">
+          <button class="tip-btn" onclick="percentChangeHandle(50)">
             50%
           </button>
-          <input class="tip-btn custom-btn" type="number" placeholder="Custom">
+          <input class="tip-btn custom-btn" type="number" placeholder="Custom" oninput="percentChangeHandle(0)" >
         </div>
 
         <div class="error-container">
@@ -50,7 +50,7 @@
       <div class="people-container">
         <div class="people-total">
           <img class="total-icon" src="images/icon-person.svg" alt="" aria-hidden="true">
-          <input class="total" placeholder="0" type="number" value="5" oninput="peopleTotalHandler()" />
+          <input id="people" class="total" placeholder="0" type="number" value="5" oninput="peopleTotalHandler()" />
         </div>
       </div>
     </div>
@@ -58,13 +58,13 @@
     <div class="final-total-card">
       <div class="per-person">
         <span class="tip-amount person-after">Tip Amount</span>
-        <span class="final-price">$4.27</span>
+        <span class="tip-pp final-price">$4.27</span>
       </div>
       <div class="total-persons">
         <span class="tip-amount person-after">Total</span>
-        <span class="final-price">$32.79</span>
+        <span class="tip-total final-price">$21.38</span>
       </div>
-      <button type="reset" class="reset-btn">Reset</button>
+      <button type="reset" class="reset-btn" onclick="resetHandle()">Reset</button>
     </div>
   </div>
 </body>
