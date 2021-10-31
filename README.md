@@ -11,7 +11,7 @@
 </p>
 
 <!-- REPLACE HREFS -->
-<a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX" target="_blank">
+<a href="https://www.frontendmentor.io/solutions/tip-calculator-app-with-sass-and-js-RE3PIi86l" target="_blank">
   <img src=https://img.shields.io/badge/solution-3e54a3?&style=for-the-badge&logo=frontendmentor&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
 <a href="https://eloquent-saha-c9f0e6.netlify.app/" target="_blank">
